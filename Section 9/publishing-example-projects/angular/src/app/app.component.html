@@ -1,0 +1,4 @@
+<uc-stock-price [stockSymbol]="stockSymbol"></uc-stock-price>
+<uc-stock-finder *ngIf="hasFinder" (ucSymbolSelected)="onSymbolSelected($event)"></uc-stock-finder>
+
+<button (click)="onLoadFinder()">Toggle finder</button>
